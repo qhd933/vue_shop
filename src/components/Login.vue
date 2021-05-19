@@ -3,7 +3,7 @@
     <div class="login_box">
       <div class="avatar_box">
         <!-- 头像区域 -->
-        <img src="@/assets/logo.png" alt="" />
+        <img src="../assets/images/login/logo.png" alt="" />
       </div>
       <!-- 登录表单区域 -->
       <el-form
@@ -51,15 +51,15 @@ export default {
         //验证用户名是否合法
         username: [
           { required: true, message: "请输入用户名", trigger: "blur" },
-          { min: 3, max: 5, message: "长度在 3 到 5 个字符", trigger: "blur" },
+          { min: 3, max: 10, message: "长度在 3 到 10个字符", trigger: "blur" },
         ],
         //验证密码是否合法
         password: [
           { required: true, message: "请输入密码", trigger: "blur" },
           {
-            min: 3,
+            min: 6,
             max: 15,
-            message: "长度在 3 到 15 个字符",
+            message: "长度在 6 到 15 个字符",
             trigger: "blur",
           },
         ],
