@@ -279,6 +279,8 @@ export default {
 }
 .el-cascader {
   width: 100%;
-  height: 100px;
+}
+.el-cascader__dropdown {
+  top: 270px !important;
 }
 </style>

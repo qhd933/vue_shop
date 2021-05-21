@@ -28,9 +28,3 @@ body,
 .el-cascader-panel {
     height: 200px;
 }
-
-.el-cascader__dropdown {
-
-    top: 270px !important;
-
-}
