@@ -25,7 +25,7 @@
         ></el-table-column>
         <el-table-column label="角色描述" prop="roleDesc"></el-table-column>
         <el-table-column label="操作">
-          <template v-slot:default="scope">
+          <template slot-scope="scope">
             <!-- 修改按钮 -->
             <el-button type="primary" icon="el-icon-edit" size="mini">
               编辑
@@ -47,7 +47,7 @@
         </el-table-column>
         <!-- 展开列 -->
         <el-table-column type="expand">
-          <template v-slot:default="scope">
+          <template slot-scope="scope">
             <el-row
               :class="['bdbottom', i1 === 0 ? 'bdtop' : '', 'vcenter']"
               v-for="(item1, i1) in scope.row.children"
