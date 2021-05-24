@@ -178,7 +178,6 @@ export default {
         value: "cat_id",
         label: "cat_name",
         children: "children",
-        checkStrictly: true,
       },
       //选中的父级分类的id数组
       selectedKeys: [],
